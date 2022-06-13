@@ -1,0 +1,16 @@
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+     padding: 0; 
+     margin: 0;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    border: 3px solid rebeccapurple;     
+}
