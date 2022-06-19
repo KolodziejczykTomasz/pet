@@ -471,6 +471,7 @@ header {
     .ofert__element {
         width: 133px;
         height: 177px;
+        background-color: #fff;
     }
 }
 
@@ -495,7 +496,7 @@ header {
         grid-template-columns: 625px 40px 711px;
         justify-content: center;
         align-items: center;
-        margin-top: 250px;
+        margin: 200px 0;
         padding-left: 140px;
         position: relative;
     }
@@ -606,7 +607,8 @@ header {
     .product__container {
         display: block;
         width: 100%;
-        height: 700px;
+        min-height: 700px;
+        height: auto;
         margin-top: 0;
     }
 }
@@ -621,12 +623,11 @@ header {
         justify-content: center;
         align-items: center;
         top: -85px;
-        margin-left: 320px;
+        margin-left: 700px;
         background-color: #fff;
         width: 170px;
         height: 170px;
         border-radius: 50%;
-        left: 300px;
         position: absolute;
         visibility: visible;
     }
@@ -656,7 +657,7 @@ header {
     background-color: #FEF7F0;
     margin-top: 0;
     padding-bottom: 80px;
-    width: 375px;
+    width: 100%;
     height: 100%;
     position: relative;
 }
@@ -754,23 +755,6 @@ header {
     }
 }
 
-.product__details___description--right {
-    display: block;
-    margin: 0 auto 50px auto;
-    width: 312px;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-@media (min-width:1920px) {
-    .product__details___description--right {
-        width: 625px;
-        padding: 0;
-        margin: 0;
-        border: 1px solid blue;
-    }
-}
-
 .product__details {
     background-color: hsla(31, 100%, 80%, 0.20);
     border-radius: 8px;
@@ -784,38 +768,37 @@ header {
 @media (min-width:1920px) {
     .product__details {
         width: 100%;
-        height: 260px;
+        min-height: 250px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #FEF7F0;
+        background-color: #FFF;
         background-image: url("../assets/images/bakterie 2.svg");
-        border: 3px solid green;
+        margin: 100px 0 200px 0;
     }
 }
 
-@media (min-width:1920px) {
-    .product__details__wrapper--right {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border: 3px solid green;
-        margin: 100px 0 100px 0;
-    }
-    .product__details__wrapper--right div {
-        display: flex;
-        flex-direction: row;
-    }
+.product__details___description--right {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 312px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 @media (min-width:1920px) {
-    .product__details__wrapper--left {
+    .product__details__top--wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
-        margin-top: 70px;
-        border: 4px solid red;
+        padding: 0 133px;
+        padding-top: 70px;
+    }
+    .product__details__top__element--text {
+        padding-left: 133px
     }
 }
 
@@ -831,13 +814,22 @@ header {
     cursor: pointer;
 }
 
+@media (min-width:1920px) {
+    .product__details__icon--plus img {
+        position: relative;
+        margin-left: 90%;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+}
+
 .modal {
     display: none;
 }
 
 @media (min-width:1920px) {
     #more {
-        margin-left: 0px;
+        margin-left: -200px;
     }
 }
 
@@ -857,7 +849,7 @@ header {
     line-height: 26px;
     height: auto;
     background-color: #fff;
-    box-shadow: 0 1px 1px 1px hsl(0, 0%, 80%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     position: absolute;
     margin-top: -500px;
     padding: 10px;
@@ -902,13 +894,80 @@ header {
     transform: rotate(45deg);
 }
 
+.product__details___description--right {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 312px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.product__details__bottom--wrapper {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 312px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.product__details__bottom--wrapper {
+    width: 100%;
+}
+
+.product__details___bottom__wrapper--element {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 312px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media (min-width:1920px) {
+    .product__details__bottom--wrapper {
+        display: flex;
+        width: 100%;
+        margin: 200px 0 100px 0;
+    }
+}
+
+@media (min-width:1920px) {
+    .product__details__wrapper--left {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        width: 100%;
+        background-image: url("../assets/images/bakterie 2.svg");
+    }
+}
+
+@media (min-width:1920px) {
+    .product__details___bottom__wrapper--element {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 151px;
+        height: auto;
+    }
+    .product__details___bottom__wrapper--element p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .product__details___bottom__wrapper__element--left,
+    .product__details___bottom__wrapper__element--right {
+        padding-right: 40px;
+    }
+}
+
 @media (min-width:1920px) {
     .product__list--wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: 4px solid yellow;
-        margin-top: 50px;
-        padding: 0 180px;
+        margin: 50px 0;
     }
 }
 
@@ -917,10 +976,15 @@ header {
     #product__list--right,
     #hidden_text {
         width: 100%;
-        border: 1px solid red;
+    }
+    #product__list--left {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     #product__list--right div {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -942,7 +1006,7 @@ header {
     width: 146px;
     height: 146px;
     cursor: pointer;
-    box-shadow: 0 1px 1px 1px hsl(0, 0%, 80%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product__description__image__element--img {
@@ -955,7 +1019,6 @@ header {
     margin: 0 auto;
     width: 311px;
     height: 330px;
-    border: 2px solid red;
 }
 
 .product__list {
@@ -965,8 +1028,10 @@ header {
 
 @media (min-width:1920px) {
     .product__list {
-        display: flex;
-        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 150px 0 50px 0;
+        width: 100%;
     }
 }
 
@@ -976,8 +1041,32 @@ header {
     align-items: center;
     min-height: 90px;
     height: auto;
+    width: 100%;
     line-height: 26px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #F0F0F0
+}
+
+@media (min-width:1920px) {
+    .product__list--item li {
+        width: 650px;
+    }
+}
+
+@media (min-width:1920px) {
+    #product__list--left,
+    #product__list--right,
+    #hidden_text {
+        width: 100%;
+    }
+    #product__list--left {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #product__list--right div {
+        flex-direction: row;
+    }
 }
 
 .product__list li img {
@@ -1042,7 +1131,6 @@ header {
     display: block;
     overflow: hidden;
     position: relative;
-    border: 2px solid orange;
 }
 
 .product__description__image--bacteries {
@@ -1063,6 +1151,8 @@ header {
 
 .product__details {
     margin-bottom: 80px;
+    background-color: #FEF7F0;
+    border-radius: 8px;
 }
 
 .product__details div {
@@ -1091,7 +1181,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 30px 20px 0 20px;
-    border: 2px solid red;
 }
 
 @media (min-width:1920px) {
@@ -1152,7 +1241,7 @@ header {
 @media (min-width:1920px) {
     .contact__container {
         display: block;
-        margin: 500px 0 100px 0;
+        margin: 90px 0 100px 0;
     }
 }
 
@@ -1188,7 +1277,7 @@ header {
     border-radius: 8px;
     margin-bottom: 40px;
     padding: 0 40px;
-    box-shadow: 0 5px 15px 5px hsl(0, 0%, 90%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width:1920px) {
@@ -1198,7 +1287,7 @@ header {
         height: 464px;
     }
     .contact__orders--contact {
-        margin-right: 20px;
+        margin-right: 40px;
     }
 }
 
@@ -1219,7 +1308,7 @@ header {
 }
 
 .contact__orders__contact--list:first-child {
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #F0F0F0
 }
 
 .contact__support__contact--list {
@@ -1228,7 +1317,7 @@ header {
 
 .contact__support__contact--woman {
     padding-bottom: 15px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #F0F0F0
 }
 
 .contact__support__contact--men {
