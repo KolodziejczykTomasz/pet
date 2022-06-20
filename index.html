@@ -237,7 +237,8 @@
                 </div>
 
                 <div class="product__details__modal--wrapper">
-                    <div id="btn_modal" class="product__details__icon--plus"><img src="assets/images/plus tooltip.svg" /></div>
+                    <div id="btn_modal" class="product__details__icon--plus">
+                        <img src="assets/images/plus tooltip.svg" /></div>
 
                     <div id="dashborad_modal" class="modal">
                         <div class="modal-content">
@@ -347,12 +348,16 @@
                     </div>
                 </div>
                 <div class="contact__content__wrapper--button">
-                    <a href="contact.html" target="_self"><button class="contact__support__button--dark ">Write to us</button>
-               </a> </div>
+                    <a href="#" target="_self"><button class="contact__support__button--dark "> Write to us</button></a>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer__container ">
+        <div id="dashborad_cookie" class="cookies__container">
+            <div class="cookies__container--text">This website uses cookies to provide services at the highest level. By continuing to use the site, you agree to their use.</div>
+            <div class="cookies__container--button"><button id="btn_cookie">ok</button></div>
+        </div>
         <div class="footer__policy"><a href="privacy.html" target="_self">
             privacy policy
         </a></div>
@@ -413,10 +418,22 @@
     var btn_modal = document.getElementById("btn_modal");
     modal.style.display = 'none';
     btn_modal.onclick = function() {
-        if (modal.style.display === "none") {
+        if (modal.style.display == "none") {
             modal.style.display = "block";
         } else {
             modal.style.display = "none";
+        }
+    }
+
+    //Cookie
+    var cookie = document.getElementById("dashborad_cookie");
+    var btn_cookie = document.getElementById("btn_cookie");
+    cookie.style.display = 'flex';
+    btn_cookie.onclick = function() {
+        if (cookie.style.display === "none") {
+            cookie.style.display = "flex";
+        } else {
+            cookie.style.display = "none";
         }
     }
 </script>

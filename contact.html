@@ -9,6 +9,7 @@
     <meta name="description" content="PET BIOM">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.webp" />
+
 </head>
 
 <body id="main__body__page__form">
@@ -36,12 +37,25 @@
                     <div class="page__form--message">we will reply within 24 h</div>
                 </div>
                 <form action="" method="get">
-                    <input type="text" mame="name" placeholder="Name" required />
-                    <input type="text" name="lastName" placeholder="Last name" required />
-                    <input type="email" name="email" placeholder="Email" required />
-                    <textarea>Message</textarea>
+                    <div class="form__wrapper--input">
+                        <input class="form_input" type="text" id="name" mame="name" placeholder="" required />
+                        <label id="name" for="name" class="form-label" name="name"> Name </label>
+                    </div>
+                    <div class="form__wrapper--input">
+                        <input class="form_input" type="text" id="lastName" name="lastName" placeholder="" required />
+                        <label id="lastName" for="lastname" class="form-label" name="lastname"> Last name </label>
+                    </div>
+                    <div class="form__wrapper--input">
+                        <input class="form_input" type="email" id="email" name="email" placeholder="" required />
+                        <label id="email" for="email" class="form-label" name="email"> Email </label>
+                    </div>
+                    <div class="form__wrapper--input">
+                        <textarea class="form_input" id="message" name="message" type="text"></textarea>
+                        <label id="message" for="message" class="form-label" name="message"> Message </label>
+                    </div>
                     <div class="page__form__checkbox--wrapper">
                         <input type="checkbox" id="checkbox__form" />
+
                         <div>I consent to the processing of my personal data by Owlie S.A. for the purpose and to the extent necessary to handle this application. I have read the information on the method of processing my data.</div>
                     </div>
 
