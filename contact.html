@@ -36,38 +36,45 @@
                     <div class="page__form--title">Write to us</div>
                     <div class="page__form--message">we will reply within 24 h</div>
                 </div>
-                <form action="" method="get">
-                    <div class="form__wrapper--input">
+                <form id="form" class="form" name="contactForm" action="post" method="get" onsubmit="">
+                    <div class="form__wrapper--input form-control">
                         <input class="form_input" type="text" id="name" mame="name" placeholder="" required />
                         <label id="name" for="name" class="form-label" name="name"> Name </label>
+                        <p class="help">Please enter your username.</p>
                     </div>
-                    <div class="form__wrapper--input">
+                    <div class="form__wrapper--input form-control">
                         <input class="form_input" type="text" id="lastName" name="lastName" placeholder="" required />
                         <label id="lastName" for="lastname" class="form-label" name="lastname"> Last name </label>
+                        <p class="help">Please enter your last name.</p>
                     </div>
-                    <div class="form__wrapper--input">
+                    <div class="form__wrapper--input form-control">
                         <input class="form_input" type="email" id="email" name="email" placeholder="" required />
                         <label id="email" for="email" class="form-label" name="email"> Email </label>
+                        <p class="help">Please enter your email.</p>
                     </div>
-                    <div class="form__wrapper--input">
-                        <textarea class="form_input" id="message" name="message" type="text"></textarea>
+                    <div class="form__wrapper--input form-control">
+                        <textarea class="form_input" id="message" name="message" type="text" required></textarea>
                         <label id="message" for="message" class="form-label" name="message"> Message </label>
+                        <p class="help">Please enter your message.</p>
                     </div>
                     <div class="page__form__checkbox--wrapper">
                         <input type="checkbox" id="checkbox__form" />
-
                         <div>I consent to the processing of my personal data by Owlie S.A. for the purpose and to the extent necessary to handle this application. I have read the information on the method of processing my data.</div>
+
                     </div>
 
-                </form>
-                <div class="page__form--buttons">
-                    <div class="switch">
-                        <input id="checkbox1" class="look" type="checkbox">
-                        <label for="checkbox1" id="switch__label ">Slide and send</label>
+
+                    <div class="page__form--buttons">
+                        <div class="form__slider--wrapper">
+                            <input type="range" min="1" max="100" value="0" class="input-slider" id="button-slide" />
+                            <label for="button-slide" id="slider__label " class="slider__label">Slide and send</label>
+                        </div>
+                        <div>
+                            <button class="page__form__button--dark " type="submit" value="Submit">Send</button>
+
+                        </div>
                     </div>
-                    <div>
-                        <a href="index.html" target="_self"><button class="page__form__button--dark ">Home Page</button></a></div>
-                </div>
+                </form>
             </div>
         </section>
 
