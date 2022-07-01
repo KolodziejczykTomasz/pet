@@ -1,38 +1,7 @@
-<!DOCTYPE HTML>
-<html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PET BIOM - Home</title>
-    <meta name="description" content="PET BIOM">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.webp" />
-</head>
+<?php get_header(); ?>
 
 <body>
-    <header>
-        <nav class="nav__container">
-            <div class="nav__brand">
-                <img class="nav__brand--image" src="assets/images/logo.svg" />
-            </div>
-            <div>
-                <ul id="menu">
-                    <li><a class="nav-item" href="#mission">Mission</a></li>
-                    <li><a class="nav-item" href="#product">About the product</a></li>
-                    <li><a class="nav-item" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav__switch__language">
-                <div>pl</div>
-                <div>en</div>
-            </div>
-            <div class="burger__wrapper">
-                <button id="burger" class="burger" onclick="this.classList.toggle('active');"></button>
-            </div>
-        </nav>
-    </header>
+
     <main>
         <section id="ofert">
             <div class="hero__container">
@@ -43,19 +12,24 @@
 
                 <div class="hero__image">
                     <img class="hero__image--bacteries" src="assets/images/bakterie 1.svg" />
-                    <img class="hero__image--dog" src="assets/images/pies-1.png" /> </div>
+                    <img class="hero__image--dog" src="assets/images/pies-1.png" />
+                </div>
             </div>
 
 
             <div class=" ofert__container ">
                 <div class="ofert__element "><img src="assets/images/dla psow.svg" />
-                    <p>for</p> dogs</div>
+                    <p>for</p> dogs
+                </div>
                 <div class="ofert__element "><img src="assets/images/dla kotow.svg" />
-                    <p>for </p>cats</div>
+                    <p>for </p>cats
+                </div>
                 <div class="ofert__element "><img src="assets/images/dla zajeczakow.svg" />
-                    <p>for </p> rabbits</div>
+                    <p>for </p> rabbits
+                </div>
                 <div class="ofert__element "><img src="assets/images/dla gryzoni.svg" />
-                    <p>for</p> rodents</div>
+                    <p>for</p> rodents
+                </div>
             </div>
         </section>
         <section id="mission" class="mission__container">
@@ -69,7 +43,8 @@
                     nourish the intestinal epithelium, produce short-chain fatty acids, synthesize vitamins and regulate the immune system.
                 </div>
                 <div class="mission__content--icon">
-                    <img src="assets/images/wskaźnik.svg" /></div>
+                    <img src="assets/images/wskaźnik.svg" />
+                </div>
                 <div class="mission__description--quote">
                     <img class="mission__description__quote--image " src="assets/images/cudzyslow 1.svg" />
                     <p>We fully understand that the probiotic products we passionately create can significantly reduce the amount of antibiotics used in everyday veterinary practice and support you during long-term treatment that carries a risk of dysbiosis.</p>
@@ -85,7 +60,8 @@
                 </div>
 
                 <div class="product__header__image--wrapper">
-                    <img class="product__header--image" src="assets/images/produkt.png" /></div>
+                    <img class="product__header--image" src="assets/images/produkt.png" />
+                </div>
                 <div id="section__product--header" class="section__header section__header__product">
                     <span class="">02</span>
                     <span class=""></span>
@@ -121,7 +97,8 @@
             <div class=" product__list ">
                 <div id="product__list--left" class="product__list">
                     <div>
-                        <button class="product__list--button">Properties</button></div>
+                        <button class="product__list--button">Properties</button>
+                    </div>
                     <div class="product__list--item">
                         <ul>
                             <li>
@@ -130,7 +107,8 @@
                             </li>
                             <li>
                                 <div><img src="assets/images/mark.svg" /></div>
-                                <div></div>Limits the multiplication of pathogenic bacteria, reduces toxin levels. </li>
+                                <div></div>Limits the multiplication of pathogenic bacteria, reduces toxin levels.
+                            </li>
                             <li>
                                 <div><img src="assets/images/mark.svg" /></div>
                                 <div>Regulates the motility of the digestive tract.</div>
@@ -238,7 +216,8 @@
 
                 <div class="product__details__modal--wrapper">
                     <div id="btn_modal" class="product__details__icon--plus">
-                        <img src="assets/images/plus tooltip.svg" /></div>
+                        <img src="assets/images/plus tooltip.svg" />
+                    </div>
 
                     <div id="dashborad_modal" class="modal">
                         <div class="modal-content">
@@ -357,86 +336,5 @@
             <div class="cookies__container--button"><button id="btn_cookie">ok</button></div>
         </div>
     </main>
-    <footer class="footer__container ">
 
-        <div class="footer__policy"><a href="privacy.html" target="_self">
-            privacy policy
-        </a></div>
-        <div class="footer__copyright">&copy;2022 Pet Biom / realization <a href="https://www.solveit.pl/" target="_blank">solveit.pl</a> </div>
-
-    </footer>
-</body>
-<script>
-    //Menu toggle
-    var top_menu = document.getElementById("menu");
-    var btn_burger = document.getElementById("burger");
-
-    window.onresize = () => {
-        location.reload();
-        if (window.innerWidth < 1919) {
-            top_menu.style.opacity = '0';
-        } else {
-            top_menu.style.opacity = '1';
-        }
-    }
-
-    btn_burger.onclick = function() {
-            if (top_menu.style.opacity == '0') {
-                top_menu.style.opacity = '1';
-                top_menu.style.transition = 'opacity 0.5s ease-out';
-            } else {
-                top_menu.style.opacity = '0';
-                top_menu.style.transition = 'none';
-            }
-        }
-        //Button more
-    const div = document.getElementById('hidden_text');
-
-    div.style.display = 'none';
-    document.getElementById('more').innerHTML = '+ more';
-    document.getElementById('more').style.marginLeft = '0';
-    document.getElementById('more').onclick = function() {
-        if (div.style.display == 'none') {
-            div.style.display = 'block';
-            document.getElementById('more').style.marginLeft = '0';
-            this.innerHTML = '- less';
-        } else {
-            div.style.display = 'none';
-            this.innerHTML = '+ more';
-        }
-    };
-    //Link active
-    let links = document.querySelectorAll('a');
-    links.forEach(a => {
-        a.addEventListener('click', function() {
-            links.forEach(a => a.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-
-    //Modal
-    var modal = document.getElementById("dashborad_modal");
-    var btn_modal = document.getElementById("btn_modal");
-    modal.style.display = 'none';
-    btn_modal.onclick = function() {
-        if (modal.style.display == "none") {
-            modal.style.display = "block";
-        } else {
-            modal.style.display = "none";
-        }
-    }
-
-    //Cookie
-    var cookie = document.getElementById("dashborad_cookie");
-    var btn_cookie = document.getElementById("btn_cookie");
-    cookie.style.display = 'flex';
-    btn_cookie.onclick = function() {
-        if (cookie.style.display === "none") {
-            cookie.style.display = "flex";
-        } else {
-            cookie.style.display = "none";
-        }
-    }
-</script>
-
-</html>
+    <?php get_footer(); ?>
