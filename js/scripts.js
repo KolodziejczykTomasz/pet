@@ -10,7 +10,7 @@
         } else {
             top_menu.style.opacity = '1';
         }
-    }
+    };
 
     btn_burger.onclick = function() {
             if (top_menu.style.opacity == '0') {

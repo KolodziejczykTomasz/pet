@@ -1,3 +1,4 @@
+<!doctype html>
 <html <?php language_attributes(); ?>>
 
 <head>
@@ -5,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo bloginfo('name'); ?></title>
-    <meta name="description" content="PET BIOM">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.webp" />
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" />
+ 
+        
+
 </head>
 <header>
     <nav class="nav__container">
         <div class="nav__brand">
-            <img class="nav__brand--image" src="assets/images/logo.svg" />
+            <img class="nav__brand--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" />
         </div>
         <div>
             <ul id="menu">
