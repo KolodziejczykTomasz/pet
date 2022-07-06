@@ -1,12 +1,11 @@
 <?php get_header(); ?>
-
 <body id="main__body__page__privacy">
     <header>
         <nav class="nav__container__page__privacy page__privacy--nav ">
             <div class="nav__brand page__form__close--brand">
-                <img class="nav__brand--image" src="assets/images/logo.svg" /> </div>
+                <img class="nav__brand--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" /> </div>
             <div class="page__privacy__close--button">
-                <a href="index.html" target="_self"><img src="assets/images/x.svg" /></a>
+                <a href="index.html" target="_self"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/x.svg" /></a>
             </div>
         </nav>
 
@@ -23,12 +22,12 @@
                     no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
                 <ul class="page__privacy__list">
                     <li>
-                        <div><img src="assets/images/mark2.svg" /></div>
+                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark2.svg" /></div>
                         <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</div>
                     </li>
                     <li>
-                        <div><img src="assets/images/mark2.svg" /></div>
+                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark2.svg" /></div>
                         <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</div>
                     </li>

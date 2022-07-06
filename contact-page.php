@@ -1,13 +1,12 @@
 <?php get_header(); ?>
-
 <body id="main__body__page__form">
     <header>
         <nav class="nav__container__form page__form--nav ">
             <div class="page__form__background--color"></div>
             <div id="nav__brand__form" class="nav__brand page__form__close--brand">
-                <img class="nav__brand--image" src="assets/images/logo.svg" /> </div>
+                <img class="nav__brand--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" /> </div>
             <div class="page__form__close--button">
-                <a href="index.html" target="_self"><img src="assets/images/x.svg" /></a>
+                <a href="index.html" target="_self"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/x.svg" /></a>
             </div>
 
         </nav>
@@ -16,8 +15,8 @@
     <main>
         <section class="page__form">
             <div class="page__form__side--left">
-                <img src="assets/images/contact/bakterie 5.svg" />
-                <img src="assets/images/contact/pies-2.png" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/bakterie 5.svg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/pies-2.png" />
             </div>
             <div class="page__form__side--right">
                 <div class="page__form__side__right__wrapper">

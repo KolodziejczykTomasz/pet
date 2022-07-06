@@ -181,6 +181,11 @@ a:hover {
     height: auto;
 }
 
+.nav__brand--link{
+    z-index:99999;
+    position: absolute;
+}
+
 @media (min-width:1920px) {
     .nav__brand {
         display: grid;
