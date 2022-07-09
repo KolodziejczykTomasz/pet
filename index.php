@@ -1,7 +1,6 @@
 <?php get_template_part('header-home'); ?>
 
 <body>
-
     <main>
         <section id="ofert">
             <div class="hero__container">
@@ -327,7 +326,7 @@
                     </div>
                 </div>
                 <div class="contact__content__wrapper--button">
-                    <a href="contact.html" target="_self"><button class="contact__support__button--dark "> Write to us</button></a>
+                    <a href="<?php echo get_home_url(); ?>/page-contact" target="_self"><button class="contact__support__button--dark "> Write to us</button></a>
                 </div>
             </div>
         </section>

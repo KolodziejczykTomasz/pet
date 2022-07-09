@@ -5,7 +5,7 @@
             <div class="nav__brand page__form__close--brand">
                 <img class="nav__brand--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" /> </div>
             <div class="page__privacy__close--button">
-                <a href="index.html" target="_self"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/x.svg" /></a>
+                <a href="<?php echo get_home_url(); ?>" target="_self"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/x.svg" /></a>
             </div>
         </nav>
 
