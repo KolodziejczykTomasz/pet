@@ -1,38 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PET BIOM - Home</title>
-    <meta name="description" content="PET BIOM">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.webp" />
-</head>
+<?php get_template_part('header-home'); ?>
 
 <body>
-    <header>
-        <nav class="nav__container">
-            <div class="nav__brand">
-                <img class="nav__brand--image" src="assets/images/logo.svg" />
-            </div>
-            <div>
-                <ul id="menu">
-                    <li><a class="nav-item" href="#mission">Mission</a></li>
-                    <li><a class="nav-item" href="#product">About the product</a></li>
-                    <li><a class="nav-item" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav__switch__language">
-                <div>pl</div>
-                <div>en</div>
-            </div>
-            <div class="burger__wrapper">
-                <button id="burger" class="burger" onclick="this.classList.toggle('active');"></button>
-            </div>
-        </nav>
-    </header>
     <main>
         <section id="ofert">
             <div class="hero__container">
@@ -42,20 +10,25 @@
                 </div>
 
                 <div class="hero__image">
-                    <img class="hero__image--bacteries" src="assets/images/bakterie 1.svg" />
-                    <img class="hero__image--dog" src="assets/images/pies-1.png" /> </div>
+                    <img class="hero__image--bacteries" src="<?php echo get_template_directory_uri(); ?>/assets/images/bakterie 1.svg" />
+                    <img class="hero__image--dog" src="<?php echo get_template_directory_uri(); ?>/assets/images/pies-1.png" />
+                </div>
             </div>
 
 
             <div class=" ofert__container ">
-                <div class="ofert__element "><img src="assets/images/dla psow.svg" />
-                    <p>for</p> dogs</div>
-                <div class="ofert__element "><img src="assets/images/dla kotow.svg" />
-                    <p>for </p>cats</div>
-                <div class="ofert__element "><img src="assets/images/dla zajeczakow.svg" />
-                    <p>for </p> rabbits</div>
-                <div class="ofert__element "><img src="assets/images/dla gryzoni.svg" />
-                    <p>for</p> rodents</div>
+                <div class="ofert__element "><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dla psow.svg" />
+                    <p>for</p> dogs
+                </div>
+                <div class="ofert__element "><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dla kotow.svg" />
+                    <p>for </p>cats
+                </div>
+                <div class="ofert__element "><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dla zajeczakow.svg" />
+                    <p>for </p> rabbits
+                </div>
+                <div class="ofert__element "><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dla gryzoni.svg" />
+                    <p>for</p> rodents
+                </div>
             </div>
         </section>
         <section id="mission" class="mission__container">
@@ -69,23 +42,25 @@
                     nourish the intestinal epithelium, produce short-chain fatty acids, synthesize vitamins and regulate the immune system.
                 </div>
                 <div class="mission__content--icon">
-                    <img src="assets/images/wskaźnik.svg" /></div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wskaźnik.svg" />
+                </div>
                 <div class="mission__description--quote">
-                    <img class="mission__description__quote--image " src="assets/images/cudzyslow 1.svg" />
+                    <img class="mission__description__quote--image " src="<?php echo get_template_directory_uri(); ?>/assets/images/cudzyslow 1.svg" />
                     <p>We fully understand that the probiotic products we passionately create can significantly reduce the amount of antibiotics used in everyday veterinary practice and support you during long-term treatment that carries a risk of dysbiosis.</p>
-                    <img class="mission__description__quote--image " src="assets/images/cudzyslow 2.svg" />
+                    <img class="mission__description__quote--image " src="<?php echo get_template_directory_uri(); ?>/assets/images/cudzyslow 2.svg" />
                 </div>
             </div>
         </section>
         <section id="product" class="product__container">
             <div class="product__container--background">
                 <div class="product__container__hidden__container">
-                    <div><img src="assets/images/napis wygodne saszetki en.svg" /></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/napis wygodne saszetki en.svg" /></div>
                     <div class="product__container__hidden__container--text">7x3g</div>
                 </div>
 
                 <div class="product__header__image--wrapper">
-                    <img class="product__header--image" src="assets/images/produkt.png" /></div>
+                    <img class="product__header--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/produkt.png" />
+                </div>
                 <div id="section__product--header" class="section__header section__header__product">
                     <span class="">02</span>
                     <span class=""></span>
@@ -99,19 +74,19 @@
                     </div>
                     <div class="product__description__image__wrapper">
                         <div class="product__description__image__element tooltip">
-                            <img class="product__description__image__element--img" src="assets/images/nie zawiera substancji konserwujacych.svg" />
+                            <img class="product__description__image__element--img" src="<?php echo get_template_directory_uri(); ?>/assets/images/nie zawiera substancji konserwujacych.svg" />
                             <span class="tooltiptext">It does not contain preservatives</span>
                         </div>
                         <div class="product__description__image__element tooltip">
-                            <img class="product__description__image__element--img" src="assets/images/nie zawiera glutenu.svg" />
+                            <img class="product__description__image__element--img" src="<?php echo get_template_directory_uri(); ?>/assets/images/nie zawiera glutenu.svg" />
                             <span class="tooltiptext">It does not contain gluten</span>
                         </div>
                         <div class="product__description__image__element tooltip">
-                            <img class="product__description__image__element--img" src="assets/images/nie zawiera substancji słodzacych.svg" />
+                            <img class="product__description__image__element--img" src="<?php echo get_template_directory_uri(); ?>/assets/images/nie zawiera substancji słodzacych.svg" />
                             <span class="tooltiptext">It does not contain sweeteners</span>
                         </div>
                         <div class="product__description__image__element tooltip">
-                            <img class="product__description__image__element--img" src="assets/images/produkt weganski.svg" />
+                            <img class="product__description__image__element--img" src="<?php echo get_template_directory_uri(); ?>/assets/images/produkt weganski.svg" />
                             <span class="tooltiptext">Vegan product</span>
                         </div>
                     </div>
@@ -121,22 +96,24 @@
             <div class=" product__list ">
                 <div id="product__list--left" class="product__list">
                     <div>
-                        <button class="product__list--button">Properties</button></div>
+                        <button class="product__list--button">Properties</button>
+                    </div>
                     <div class="product__list--item">
                         <ul>
                             <li>
-                                <div><img src="assets/images/mark.svg" /></div>
+                                <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                 <div>Improves the qualitative and quantitative composition of the intestinal microbiome.</div>
                             </li>
                             <li>
-                                <div><img src="assets/images/mark.svg" /></div>
-                                <div></div>Limits the multiplication of pathogenic bacteria, reduces toxin levels. </li>
+                                <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
+                                <div></div>Limits the multiplication of pathogenic bacteria, reduces toxin levels.
+                            </li>
                             <li>
-                                <div><img src="assets/images/mark.svg" /></div>
+                                <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                 <div>Regulates the motility of the digestive tract.</div>
                             </li>
                             <li>
-                                <div><img src="assets/images/mark.svg" /></div>
+                                <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                 <div>Improves the body's natural immunity.</div>
                             </li>
                         </ul>
@@ -149,19 +126,19 @@
                         <div class="product__list--item">
                             <ul>
                                 <li>
-                                    <div><img src="assets/images/mark.svg" /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                     <div>Intestinal dysbiosis.</div>
                                 </li>
                                 <li>
-                                    <div><img src="assets/images/mark.svg" /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                     <div>Chronic inflammation of the intestines IBD, IBS, Colitis.</div>
                                 </li>
                                 <li>
-                                    <div><img src="assets/images/mark.svg" /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                     <div>Malabsorption syndromes.</div>
                                 </li>
                                 <li>
-                                    <div><img src="assets/images/mark.svg" /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                     <div>Mycosis of the digestive system.</div>
                                 </li>
                             </ul>
@@ -171,39 +148,39 @@
                             <div id="hidden_text" class="product__list">
                                 <ul>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Acute and chronic pancreatitis, and in exocrine pancreatic insufficiency EPI.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Disorders of intestinal microbiota.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Problems with defecation, megacolon in cats.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Diarrhea.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Conditions of increased stress.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Antibiotic therapy.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Decreased immunity supporting the course of atopy.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>Unpleasant odor from the mouth.</div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mark.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mark.svg" /></div>
                                         <div>To enhance regeneration.</div>
                                     </li>
                                 </ul>
@@ -238,7 +215,8 @@
 
                 <div class="product__details__modal--wrapper">
                     <div id="btn_modal" class="product__details__icon--plus">
-                        <img src="assets/images/plus tooltip.svg" /></div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/plus tooltip.svg" />
+                    </div>
 
                     <div id="dashborad_modal" class="modal">
                         <div class="modal-content">
@@ -276,8 +254,8 @@
 
         <section id="contact" class="contact__container ">
             <div class="contact__description__image">
-                <img class="contact__description__image--bacteries" src="assets/images/bakterie 3.svg" />
-                <img class="contact__description__image--cat " src="assets/images/kot.png" />
+                <img class="contact__description__image--bacteries" src="<?php echo get_template_directory_uri(); ?>/assets/images/bakterie 3.svg" />
+                <img class="contact__description__image--cat " src="<?php echo get_template_directory_uri(); ?>/assets/images/kot.png" />
             </div>
             <div id="section__contact--header" class="section__header">
                 <span>03</span>
@@ -300,11 +278,11 @@
                         <div class="contact__orders__contact--list ">
                             <ul>
                                 <li>
-                                    <div><img src="assets/images/telefon.svg " /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/telefon.svg " /></div>
                                     <div><a href="tel:515 739 219">515 739 219</a></div>
                                 </li>
                                 <li>
-                                    <div><img src="assets/images/mail.svg " /></div>
+                                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.svg " /></div>
                                     <div><a href="mailto:zamowienia@owlie.pl">zamowienia@owlie.pl</a></div>
                                 </li>
                             </ul>
@@ -319,11 +297,11 @@
 
                                 <ul>
                                     <li>
-                                        <div><img src="assets/images/telefon.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/telefon.svg" /></div>
                                         <div><a href="tel:786 951 555">786 951 555</a></div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mail.svg" /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.svg" /></div>
                                         <div><a href="mailto:petbiom@owlie.pl">petbiom@owlie.pl</a></div>
                                     </li>
                                 </ul>
@@ -335,11 +313,11 @@
                             <div class="contact__support__contact--list">
                                 <ul>
                                     <li>
-                                        <div><img src="assets/images/telefon.svg " /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/telefon.svg " /></div>
                                         <div><a href="tel:797 355 990">797 355 990</a></div>
                                     </li>
                                     <li>
-                                        <div><img src="assets/images/mail.svg " /></div>
+                                        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.svg " /></div>
                                         <div><a href="mailto:dmoch@owlie.pl">dmoch@owlie.pl</a></div>
                                     </li>
                                 </ul>
@@ -348,7 +326,7 @@
                     </div>
                 </div>
                 <div class="contact__content__wrapper--button">
-                    <a href="contact.html" target="_self"><button class="contact__support__button--dark "> Write to us</button></a>
+                    <a href="<?php echo get_home_url(); ?>/page-contact" target="_self"><button class="contact__support__button--dark "> Write to us</button></a>
                 </div>
             </div>
         </section>
@@ -357,86 +335,5 @@
             <div class="cookies__container--button"><button id="btn_cookie">ok</button></div>
         </div>
     </main>
-    <footer class="footer__container ">
 
-        <div class="footer__policy"><a href="privacy.html" target="_self">
-            privacy policy
-        </a></div>
-        <div class="footer__copyright">&copy;2022 Pet Biom / realization <a href="https://www.solveit.pl/" target="_blank">solveit.pl</a> </div>
-
-    </footer>
-</body>
-<script>
-    //Menu toggle
-    var top_menu = document.getElementById("menu");
-    var btn_burger = document.getElementById("burger");
-
-    window.onresize = () => {
-        location.reload();
-        if (window.innerWidth < 1919) {
-            top_menu.style.opacity = '0';
-        } else {
-            top_menu.style.opacity = '1';
-        }
-    }
-
-    btn_burger.onclick = function() {
-            if (top_menu.style.opacity == '0') {
-                top_menu.style.opacity = '1';
-                top_menu.style.transition = 'opacity 0.5s ease-out';
-            } else {
-                top_menu.style.opacity = '0';
-                top_menu.style.transition = 'none';
-            }
-        }
-        //Button more
-    const div = document.getElementById('hidden_text');
-
-    div.style.display = 'none';
-    document.getElementById('more').innerHTML = '+ more';
-    document.getElementById('more').style.marginLeft = '0';
-    document.getElementById('more').onclick = function() {
-        if (div.style.display == 'none') {
-            div.style.display = 'block';
-            document.getElementById('more').style.marginLeft = '0';
-            this.innerHTML = '- less';
-        } else {
-            div.style.display = 'none';
-            this.innerHTML = '+ more';
-        }
-    };
-    //Link active
-    let links = document.querySelectorAll('a');
-    links.forEach(a => {
-        a.addEventListener('click', function() {
-            links.forEach(a => a.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-
-    //Modal
-    var modal = document.getElementById("dashborad_modal");
-    var btn_modal = document.getElementById("btn_modal");
-    modal.style.display = 'none';
-    btn_modal.onclick = function() {
-        if (modal.style.display == "none") {
-            modal.style.display = "block";
-        } else {
-            modal.style.display = "none";
-        }
-    }
-
-    //Cookie
-    var cookie = document.getElementById("dashborad_cookie");
-    var btn_cookie = document.getElementById("btn_cookie");
-    cookie.style.display = 'flex';
-    btn_cookie.onclick = function() {
-        if (cookie.style.display === "none") {
-            cookie.style.display = "flex";
-        } else {
-            cookie.style.display = "none";
-        }
-    }
-</script>
-
-</html>
+    <?php get_footer(); ?>

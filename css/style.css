@@ -1,31 +1,31 @@
 @font-face {
     font-display: swap;
     font-family: "Raleway";
-    src: url("../assets/fonts/Raleway-Black.ttf");
+    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Black.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewayBold";
-    src: url("../assets/fonts/Raleway-Bold.ttf");
+    src: url('http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Bold.ttf');
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewayExtraBold";
-    src: url("../assets/fonts/Raleway-ExtraBold.ttf");
+    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-ExtraBold.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "Raleway";
-    src: url("../assets/fonts/Raleway-Regular.ttf");
+    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewaySemiBold";
-    src: url("../assets/fonts/Raleway-SemiBold.ttf");
+    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-SemiBold.ttf");
 }
 
 html {
@@ -179,6 +179,11 @@ a:hover {
     width: 170px;
     padding-left: 10px;
     height: auto;
+}
+
+.nav__brand--link{
+    z-index:99999;
+    position: absolute;
 }
 
 @media (min-width:1920px) {
