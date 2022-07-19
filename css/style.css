@@ -1,31 +1,33 @@
+@import url("form.css");
+
 @font-face {
     font-display: swap;
     font-family: "Raleway";
-    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Black.ttf");
+    src: url("../assets/fonts/Raleway-Black.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewayBold";
-    src: url('http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Bold.ttf');
+    src: url("../assets/fonts/Raleway-Bold.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewayExtraBold";
-    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-ExtraBold.ttf");
+    src: url("../assets/fonts/Raleway-ExtraBold.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "Raleway";
-    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-Regular.ttf");
+    src: url("../assets/fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
     font-display: swap;
     font-family: "RalewaySemiBold";
-    src: url("http://localhost/wordpress/wp-content/themes/pet/fonts/Raleway-SemiBold.ttf");
+    src: url("../assets/fonts/Raleway-SemiBold.ttf");
 }
 
 html {
@@ -179,11 +181,6 @@ a:hover {
     width: 170px;
     padding-left: 10px;
     height: auto;
-}
-
-.nav__brand--link{
-    z-index:99999;
-    position: absolute;
 }
 
 @media (min-width:1920px) {
@@ -1615,6 +1612,7 @@ header {
 
 .page__form {
     font-family: 'Raleway';
+    height: auto;
 }
 
 .page__form__side--left {
@@ -1656,205 +1654,6 @@ header {
     margin: 50px 0 20px 20px;
 }
 
-input,
-textarea {
-    border: none;
-    border-bottom: 1px solid #d4d4d4;
-    width: calc(100% - 44px);
-    margin: 0 20px 20px 20px;
-    height: 60px;
-    line-height: 18px;
-    font-size: 16px;
-    color: #000;
-    font-family: 'Raleway';
-}
-
-input::placeholder {
-    color: #000;
-    opacity: 1;
-    font-family: 'Raleway';
-}
-
-input:focus,
-textarea:focus {
-    outline: none !important;
-    border-bottom: 1px solid #EF7D00;
-    color: #EF7D00;
-}
-
-#form_input {
-    display: block;
-}
-
-.form-label {
-    display: block;
-    position: absolute;
-    margin-top: -85px;
-    margin-left: 20px;
-}
-
-.form-label:last-child {
-    margin-top: -40px;
-}
-
-.help {
-    background-color: white;
-    color: red;
-    margin-left: 20px;
-    bottom: 20px;
-    visibility: hidden;
-    position: relative;
-}
-
-form {
-    margin-bottom: 30px;
-}
-
-#checkbox__form {
-    width: 16px;
-    height: 16px;
-}
-
-textarea {
-    height: 120px;
-    padding-bottom: 30px;
-    font-family: 'Raleway';
-}
-
-.page__form--message {
-    display: none;
-}
-
-.page__form__checkbox--wrapper {
-    display: flex;
-    font-size: 13px;
-    line-height: 26px;
-    padding-right: 20px;
-    margin-top: 20px;
-}
-
-.page__form__button--dark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 310px;
-    height: 70px;
-    border: none;
-    margin: 50px auto 40px auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-family: 'Raleway';
-    letter-spacing: 2px;
-    color: white;
-    background-color: #EF7D00;
-    box-shadow: 0 10px 40px rgba(239, 125, 0, 0.4);
-    transition: .3s;
-}
-
-@media (min-width:1920px) {
-    .page__form__button--dark {
-        margin: 0;
-        padding: 0;
-        width: 236px;
-    }
-}
-
-.page__form--buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    min-height: 280px;
-    height: auto;
-}
-
-@media (min-width:1920px) {
-    .page__form--buttons {
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-.form__slider--wrapper {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    width: 310px;
-    height: 70px;
-    border: 1px solid #EF7D00;
-    background-color: #fff;
-    color: #EF7D00;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-@media (min-width:1920px) {
-    .form__slider--wrapper {
-        width: 236px;
-        margin-right: 20px;
-    }
-}
-
-.input-slider {
-    position: relative;
-    background-color: transparent;
-    width: 100%;
-    margin-bottom: -2px;
-    border: none;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.input-slider:focus {
-    border: none;
-}
-
-.input-slider:hover {
-    opacity: 1;
-}
-
-.input-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 70px;
-    background-color: #EF7D00;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-}
-
-.input-slider::-moz-range-thumb {
-    width: 25px;
-    height: 70px;
-    background-color: #EF7D00;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-}
-
-.slider__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border: 1px solid #EF7D00;
-    position: absolute;
-    color: #EF7D00;
-    margin: 0 auto;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    z-index: -1;
-}
 
 @media (min-width:1920px) {
     .page__form {
