@@ -1,6 +1,6 @@
 //Menu toggle
-var top_menu = document.getElementById("menu");
-var btn_burger = document.getElementById("burger");
+let top_menu = document.getElementById("menu");
+let btn_burger = document.getElementById("burger");
 
 window.onresize = () => {
   location.reload();
@@ -46,8 +46,8 @@ links.forEach((a) => {
 });
 
 //Modal
-var modal = document.getElementById("dashborad_modal");
-var btn_modal = document.getElementById("btn_modal");
+let modal = document.getElementById("dashborad_modal");
+let btn_modal = document.getElementById("btn_modal");
 modal.style.display = "none";
 btn_modal.onclick = function () {
   if (modal.style.display == "none") {
@@ -58,8 +58,8 @@ btn_modal.onclick = function () {
 };
 
 //Cookie
-var cookie = document.getElementById("dashborad_cookie");
-var btn_cookie = document.getElementById("btn_cookie");
+let cookie = document.getElementById("dashborad_cookie");
+let btn_cookie = document.getElementById("btn_cookie");
 cookie.style.display = "flex";
 btn_cookie.onclick = function () {
   if (cookie.style.display === "none") {
@@ -72,12 +72,10 @@ btn_cookie.onclick = function () {
 //Form
 
 function isCheck() {
-  var checkBox = document.getElementById("checkbox__form"),
+  let checkBox = document.getElementById("checkbox_id"),
     btn_range = document.getElementById("button-slide"),
     currentVal = btn_range.value;
-  btn_send = document.getElementById("button-submit");
-
-  btn_send.disabled = true;
+  let btn_send = document.getElementById("button-submit");
 
   if (checkBox.checked == true && currentVal == 100) {
     btn_send.classList.remove("button-light");
@@ -89,3 +87,5 @@ function isCheck() {
     checkBox.removeAttribute("checked");
   }
 }
+
+
