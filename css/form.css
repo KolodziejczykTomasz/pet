@@ -9,7 +9,13 @@ textarea {
     font-size: 16px;
     color: #000;
     font-family: 'Raleway';
+	padding-bottom: 50p
 }
+
+#name, #lastName, #email {
+margin-bottom: 30px;
+}
+
 textarea {
     padding-top: 30px;
 }
@@ -17,6 +23,7 @@ input::placeholder {
     color: #000;
     opacity: 1;
     font-family: 'Raleway';
+
 }
 
 input:focus,
@@ -82,9 +89,6 @@ textarea {
     font-family: 'Raleway';
 }
 
-.page__form--message {
-    display: none;
-}
 
 .page__form__checkbox--wrapper {
     display: flex;
@@ -130,6 +134,11 @@ textarea {
     color: #EF7D00;
     box-shadow: 0 10px 40px rgba(239, 125, 0, 0.4);
     cursor: default;
+}
+
+@media (max-width:1919px) {
+.page__form--message {
+        display: none;}
 }
 
 @media (min-width:1920px) {
